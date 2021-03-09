@@ -1,9 +1,3 @@
-import CircleLoader from 'react-spinners/CircleLoader';
-
-const Loading = () => (
-    <div className='loader'>
-        <CircleLoader size='120px' color='var(--accent)' />
-    </div>
-);
+const Loading = () => <div className='loader'></div>;
 
 export default Loading;

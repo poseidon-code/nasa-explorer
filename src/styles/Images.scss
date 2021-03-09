@@ -43,60 +43,54 @@
     }
 }
 
-h1 {
-    width: 100%;
-    text-align: center;
-    color: var(--accent);
-    padding-top: 0.5rem;
-}
-
 .card {
     position: relative;
     width: 100%;
     margin: calc(var(--cg) / 2) 0;
     display: inline-block;
     transition: var(--time) ease-in-out;
-}
 
-img {
-    width: 100%;
-    border-radius: 1rem;
-    transition: var(--time) ease-in-out;
-}
+    img {
+        width: 100%;
+        border-radius: 1rem;
+        transition: var(--time) ease-in-out;
+    }
 
-.card:hover {
-    transform: scale(1.05);
-}
-.card:hover img {
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
-}
+    &:hover {
+        transform: scale(1.05);
+    }
 
-.card .options {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    padding: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    border-radius: 1.4rem;
-    color: var(--accent);
+    &:hover img {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+    }
 
-    background-color: rgba(255, 255, 255, 0.16);
-    visibility: hidden;
-    opacity: 0;
-    transition: var(--time) ease-in-out;
-}
+    .options {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 1.4rem;
+        color: var(--accent);
 
-.card:hover .options {
-    visibility: visible;
-    opacity: 1;
-}
+        background-color: rgba(255, 255, 255, 0.16);
+        visibility: hidden;
+        opacity: 0;
+        transition: var(--time) ease-in-out;
+    }
 
-.card .download {
-    color: var(--text);
-}
-.download:hover {
-    color: var(--accent);
+    &:hover .options {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .download {
+        color: var(--text);
+        &:hover {
+            color: var(--accent);
+        }
+    }
 }
